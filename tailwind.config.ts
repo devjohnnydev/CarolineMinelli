@@ -11,6 +11,12 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
+        legal: {
+          purple: "#1a0b2e",
+          gold: "#d4af37",
+          "purple-light": "#2d1b4e",
+          "gold-light": "#f1d063",
+        },
         // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
@@ -83,8 +89,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
+        sans: ["'Plus Jakarta Sans'", "sans-serif"],
+        serif: ["'Playfair Display'", "serif"],
         mono: ["var(--font-mono)"],
       },
       keyframes: {
