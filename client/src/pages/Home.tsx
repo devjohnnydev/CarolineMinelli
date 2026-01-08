@@ -72,7 +72,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-white/80 max-w-3xl mb-10 font-light leading-relaxed"
+            className="text-xl md:text-2xl text-foreground/80 max-w-3xl mb-10 font-light leading-relaxed"
           >
             "Construindo relações humanizadas por meios alternativos nas resoluções de conflitos."
           </motion.p>
@@ -124,7 +124,7 @@ export default function Home() {
               className="relative"
             >
               <div className="absolute inset-0 bg-primary rounded-2xl transform translate-x-4 translate-y-4 -z-10 opacity-20" />
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] bg-secondary/50">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border aspect-[4/5] bg-secondary/50">
                 {/* Lawyer Image */}
                 <img 
                   src={brandingImg} 
@@ -135,7 +135,7 @@ export default function Home() {
                 {/* Overlay Badge */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/80 to-transparent">
                   <h3 className="text-2xl font-serif text-primary font-bold">Dra. Caroline Minelli</h3>
-                  <p className="text-white/80">OAB/SP 123.456</p>
+                  <p className="text-foreground/80">OAB/SP 123.456</p>
                 </div>
               </div>
             </motion.div>
@@ -148,7 +148,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Sobre Mim</h4>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-white">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-foreground">
                 Advocacia com <span className="text-primary italic">Humanidade</span> e Excelência
               </h2>
               
@@ -173,7 +173,7 @@ export default function Home() {
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-primary w-5 h-5 flex-shrink-0" />
-                    <span className="text-white/90 font-medium">{item}</span>
+                    <span className="text-foreground/90 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
@@ -187,7 +187,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Áreas de Atuação</h4>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               Serviços Jurídicos Especializados
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -260,7 +260,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Contato</h4>
-              <h2 className="text-4xl font-serif font-bold text-white mb-8">
+              <h2 className="text-4xl font-serif font-bold text-foreground mb-8">
                 Vamos Conversar?
               </h2>
               <p className="text-muted-foreground text-lg mb-10">
@@ -270,41 +270,41 @@ export default function Home() {
 
               <div className="space-y-8">
                 <a href="https://wa.me/5511918231667" target="_blank" className="flex items-start gap-4 group">
-                  <div className="p-3 rounded-full bg-white/5 group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 rounded-full bg-foreground/5 group-hover:bg-primary/20 transition-colors">
                     <MessageCircle className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-white mb-1">WhatsApp</h5>
+                    <h5 className="font-bold text-foreground mb-1">WhatsApp</h5>
                     <p className="text-muted-foreground group-hover:text-primary transition-colors">(11) 91823-1667</p>
                   </div>
                 </a>
 
                 <a href="mailto:advcarolineminelli@gmail.com" className="flex items-start gap-4 group">
-                  <div className="p-3 rounded-full bg-white/5 group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 rounded-full bg-foreground/5 group-hover:bg-primary/20 transition-colors">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-white mb-1">Email</h5>
+                    <h5 className="font-bold text-foreground mb-1">Email</h5>
                     <p className="text-muted-foreground group-hover:text-primary transition-colors">advcarolineminelli@gmail.com</p>
                   </div>
                 </a>
 
                 <a href="https://instagram.com/advogada.carolineminelli" target="_blank" className="flex items-start gap-4 group">
-                  <div className="p-3 rounded-full bg-white/5 group-hover:bg-primary/20 transition-colors">
+                  <div className="p-3 rounded-full bg-foreground/5 group-hover:bg-primary/20 transition-colors">
                     <Instagram className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-white mb-1">Instagram</h5>
+                    <h5 className="font-bold text-foreground mb-1">Instagram</h5>
                     <p className="text-muted-foreground group-hover:text-primary transition-colors">@advogada.carolineminelli</p>
                   </div>
                 </a>
 
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-full bg-white/5">
+                  <div className="p-3 rounded-full bg-foreground/5">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h5 className="font-bold text-white mb-1">Localização</h5>
+                    <h5 className="font-bold text-foreground mb-1">Localização</h5>
                     <p className="text-muted-foreground">São Paulo - SP</p>
                   </div>
                 </div>
@@ -316,9 +316,9 @@ export default function Home() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-secondary/30 border border-white/5 p-8 md:p-10 rounded-3xl backdrop-blur-sm"
+              className="bg-secondary/30 border border-border p-8 md:p-10 rounded-3xl backdrop-blur-sm"
             >
-              <h3 className="text-2xl font-serif font-bold text-white mb-6">Envie uma mensagem</h3>
+              <h3 className="text-2xl font-serif font-bold text-foreground mb-6">Envie uma mensagem</h3>
               <ContactForm />
             </motion.div>
           </div>
@@ -326,11 +326,11 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#0f0518] py-12 border-t border-white/5">
+      <footer className="bg-secondary/10 py-12 border-t border-border">
         <div className="container px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
             <Scale className="w-6 h-6 text-primary" />
-            <span className="font-serif text-xl font-bold text-white">Caroline Minelli</span>
+            <span className="font-serif text-xl font-bold text-foreground">Caroline Minelli</span>
           </div>
           
           <div className="flex justify-center gap-8 mb-8 text-sm text-muted-foreground">
@@ -340,7 +340,7 @@ export default function Home() {
             <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </div>
 
-          <p className="text-xs text-white/30">
+          <p className="text-xs text-foreground/30">
             &copy; {new Date().getFullYear()} Caroline Minelli Advocacia. Todos os direitos reservados.
           </p>
         </div>

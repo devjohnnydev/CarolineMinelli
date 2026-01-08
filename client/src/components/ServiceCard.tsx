@@ -19,16 +19,16 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className="h-full"
     >
-      <div className="group h-full p-8 rounded-2xl glass-card hover:bg-white/5 transition-all duration-300 border border-white/5 hover:border-primary/30 relative overflow-hidden">
+      <div className="group h-full p-8 rounded-2xl glass-card hover:bg-secondary/20 transition-all duration-300 border border-border hover:border-primary/30 relative overflow-hidden">
         {/* Hover Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         
         <div className="relative z-10 flex flex-col items-center text-center h-full">
-          <div className="p-4 rounded-full bg-primary/10 text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-background transition-all duration-300">
+          <div className="p-4 rounded-full bg-primary/10 text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
             <IconComponent className="w-8 h-8" />
           </div>
           
-          <h3 className="text-xl font-serif font-bold mb-3 text-white group-hover:text-primary transition-colors">
+          <h3 className="text-xl font-serif font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
             {service.title}
           </h3>
           

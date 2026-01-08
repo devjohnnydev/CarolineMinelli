@@ -54,12 +54,12 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Nome Completo</FormLabel>
+                <FormLabel className="text-foreground">Nome Completo</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="Seu nome" 
                     {...field} 
-                    className="bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-primary/20 h-12" 
+                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-primary/20 h-12" 
                   />
                 </FormControl>
                 <FormMessage />
@@ -71,12 +71,12 @@ export function ContactForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Telefone / WhatsApp</FormLabel>
+                <FormLabel className="text-foreground">Telefone / WhatsApp</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="(00) 00000-0000" 
                     {...field} 
-                    className="bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-primary/20 h-12" 
+                    className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-primary/20 h-12" 
                   />
                 </FormControl>
                 <FormMessage />
@@ -90,12 +90,12 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white">Email</FormLabel>
+              <FormLabel className="text-foreground">Email</FormLabel>
               <FormControl>
                 <Input 
                   placeholder="seu@email.com" 
                   {...field} 
-                  className="bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-primary/20 h-12" 
+                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-primary/20 h-12" 
                 />
               </FormControl>
               <FormMessage />
@@ -108,12 +108,12 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white">Como podemos ajudar?</FormLabel>
+              <FormLabel className="text-foreground">Como podemos ajudar?</FormLabel>
               <FormControl>
                 <Textarea 
                   placeholder="Descreva brevemente seu caso..." 
                   {...field} 
-                  className="bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-primary/20 min-h-[120px] resize-none" 
+                  className="bg-background/50 border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-primary/20 min-h-[120px] resize-none" 
                 />
               </FormControl>
               <FormMessage />
@@ -124,7 +124,7 @@ export function ContactForm() {
         <Button 
           type="submit" 
           disabled={isSubmitting}
-          className="w-full h-12 bg-gradient-to-r from-primary to-[#f1d063] text-background font-bold text-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
+          className="w-full h-12 bg-gradient-to-r from-primary to-[#f1d063] text-primary-foreground font-bold text-lg hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
         >
           {isSubmitting ? (
             <>
