@@ -198,7 +198,7 @@ export default function Home() {
             </h2>
             <p className="text-muted-foreground text-lg">
               Atuamos com excelência e dedicação em diversas áreas do direito, 
-              sempre focando na melhor solução para o seu caso.
+              sempre focando na melhor solution para o seu caso.
             </p>
           </div>
 

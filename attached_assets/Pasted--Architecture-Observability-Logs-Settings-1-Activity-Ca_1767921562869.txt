@@ -1,0 +1,302 @@
+
+Architecture
+Observability
+Logs
+Settings
+
+
+
+1
+
+
+
+
+
+
+Activity
+
+CarolineMinelli
+
+Deployment failed
+
+2 minutes ago
+
+CarolineMinelli
+
+Deployment crashed
+
+1 hour ago
+
+CarolineMinelli
+
+Deployment restarted
+
+1 hour ago
+
+CarolineMinelli
+
+Deployment restarted
+
+1 hour ago
+
+CarolineMinelli
+
+Deployment successful
+
+1 hour ago
+
+
+New environment
+
+devjohnnydev
+
+·
+1 hour ago
+
+CarolineMinelli
+Deployments
+Variables
+Metrics
+Settings
+carolineminelli-production.up.railway.app
+us-east4-eqdc4a
+1 Replica
+
+
+
+
+History
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CarolineMinelli
+/
+f2304ed1
+Failed
+
+Jan 8, 2026, 10:16 PM
+carolineminelli-production.up.railway.app
+Get Help
+Details
+Build Logs
+Deploy Logs
+HTTP Logs
+Search build logs
+
+You reached the start of the range
+Jan 8, 2026, 10:11 PM
+[snapshot] received sha256:7f09057db7618b4b6cc3a40a460c0c07a78ca1265e8ec5ccacd4e98ad1f695cd md5:4cb91857c980fe87e7296db907c4d8ed
+receiving snapshot
+3.4 MB
+409ms
+analyzing snapshot
+3.4 MB
+7ms
+uploading snapshot
+3.4 MB
+35ms
+fetched snapshot sha256:7f09057db7618b4b6cc3a40a460c0c07a78ca1265e8ec5ccacd4e98ad1f695cd (3.6 MB bytes)
+fetching snapshot
+3.4 MB
+216ms
+unpacking archive
+4 MB
+13ms
+using build driver railpack-v0.15.4
+                   
+╭─────────────────╮
+│ Railpack 0.15.4 │
+╰─────────────────╯
+ 
+  ↳ Detected Node
+  ↳ Using npm package manager
+            
+  Packages  
+  ──────────
+  node  │  22.21.1  │  railpack default (22)
+            
+  Steps     
+  ──────────
+  ▸ install
+    $ npm ci
+         
+  ▸ build
+    $ npm run build
+            
+  Deploy    
+  ──────────
+    $ npm run start
+ 
+scheduling build on Metal builder "builder-oujoni"
+
+load build definition from ./railpack-plan.json
+1ms
+
+install apt packages: libatomic1
+2s
+Processing triggers for libc-bin (2.36-9+deb12u13) ...
+
+install mise packages: node
+3s
+mise node@22.21.1 ✓ installed
+
+mkdir -p /app/node_modules/.cache
+774ms
+
+copy package-lock.json
+463ms
+
+copy /mise/shims, /usr/local/bin/mise, /etc/mise/config.toml, /mise/installs, /root/.local/state/mise cached
+0ms
+
+copy package.json
+285ms
+scheduling build on Metal builder "builder-oujoni"
+
+npm ci
+7s
+Run `npm audit` for details.
+
+copy / /app
+455ms
+
+npm run build
+3s
+npm warn config production Use `--omit=dev` instead.
+> rest-express@1.0.0 build
+> tsx script/build.ts
+building client...
+vite v7.3.0 building client environment for production...
+transforming...
+✓ 67 modules transformed.
+✗ Build failed in 1.58s
+[vite]: Rollup failed to resolve import "/images/branding.png" from "/app/client/src/pages/Home.tsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteLog (/app/node_modules/vite/dist/node/chunks/config.js:33634:57)
+    at <anonymous> (/app/node_modules/vite/dist/node/chunks/config.js:33668:73)
+    at onwarn (/app/node_modules/@vitejs/plugin-react/dist/index.js:90:7)
+    at <anonymous> (/app/node_modules/vite/dist/node/chunks/config.js:33668:28)
+    at onRollupLog (/app/node_modules/vite/dist/node/chunks/config.js:33663:63)
+    at onLog (/app/node_modules/vite/dist/node/chunks/config.js:33466:4)
+    at <anonymous> (/app/node_modules/rollup/dist/es/shared/node-entry.js:21004:32)
+    at Object.logger (/app/node_modules/rollup/dist/es/shared/node-entry.js:22891:9)
+    at ModuleLoader.handleInvalidResolvedId (/app/node_modules/rollup/dist/es/shared/node-entry.js:21635:26)
+    at <anonymous> (/app/node_modules/rollup/dist/es/shared/node-entry.js:21593:26) {
+  watchFiles: [
+    '/app/client/index.html',
+    '/app/client/src/main.tsx',
+    '/app/package.json',
+    '/app/node_modules/react/jsx-runtime.js',
+    '/app/client/src/index.css',
+    '/app/node_modules/react-dom/client.js',
+    '/app/client/src/App.tsx',
+    '/app/node_modules/react/cjs/react-jsx-runtime.production.min.js',
+    '/app/node_modules/react-dom/index.js',
+    '/app/node_modules/react/index.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/index.js',
+    '/app/client/src/components/ui/toaster.tsx',
+    '/app/client/src/components/ui/tooltip.tsx',
+    '/app/client/src/lib/queryClient.ts',
+    '/app/client/src/components/ThemeProvider.tsx',
+    '/app/client/src/pages/not-found.tsx',
+    '/app/client/src/pages/Home.tsx',
+    '/app/node_modules/wouter/esm/index.js',
+    '/app/node_modules/@tanstack/query-core/build/modern/index.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/types.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useQueries.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/queryOptions.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useIsFetching.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useMutationState.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/isRestoring.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useMutation.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js',
+    '/app/client/src/hooks/use-services.ts',
+    '/app/client/src/hooks/use-toast.ts',
+    '/app/client/src/lib/utils.ts',
+    '/app/client/src/components/ContactForm.tsx',
+    '/app/client/src/components/FloatingWhatsApp.tsx',
+    '/app/client/src/components/Navigation.tsx',
+    '/app/client/src/components/ServiceCard.tsx',
+    '/app/client/src/components/ThemeToggle.tsx',
+    '/app/client/src/components/ui/accordion.tsx',
+    '/app/client/src/components/ui/alert-dialog.tsx',
+    '/app/client/src/components/ui/alert.tsx',
+    '/app/client/src/components/ui/aspect-ratio.tsx',
+    '/app/client/src/components/ui/avatar.tsx',
+    '/app/client/src/components/ui/badge.tsx',
+    '/app/client/src/components/ui/breadcrumb.tsx',
+    '/app/client/src/components/ui/button.tsx',
+    '/app/client/src/components/ui/calendar.tsx',
+    '/app/client/src/components/ui/card.tsx',
+    '/app/client/src/components/ui/carousel.tsx',
+    '/app/client/src/components/ui/chart.tsx',
+    '/app/client/src/components/ui/checkbox.tsx',
+    '/app/client/src/components/ui/collapsible.tsx',
+    '/app/client/src/components/ui/command.tsx',
+    '/app/client/src/components/ui/context-menu.tsx',
+    '/app/client/src/components/ui/dialog.tsx',
+    '/app/client/src/components/ui/drawer.tsx',
+    '/app/client/src/components/ui/dropdown-menu.tsx',
+    '/app/client/src/components/ui/form.tsx',
+    '/app/client/src/components/ui/hover-card.tsx',
+    '/app/client/src/components/ui/input-otp.tsx',
+    '/app/client/src/components/ui/input.tsx',
+    '/app/client/src/components/ui/label.tsx',
+    '/app/client/src/components/ui/menubar.tsx',
+    '/app/client/src/components/ui/navigation-menu.tsx',
+    '/app/client/src/components/ui/pagination.tsx',
+    '/app/client/src/components/ui/popover.tsx',
+    '/app/client/src/components/ui/progress.tsx',
+    '/app/client/src/components/ui/radio-group.tsx',
+    '/app/client/src/components/ui/resizable.tsx',
+    '/app/client/src/components/ui/scroll-area.tsx',
+    '/app/client/src/components/ui/select.tsx',
+    '/app/client/src/components/ui/separator.tsx',
+    '/app/client/src/components/ui/sheet.tsx',
+    '/app/client/src/components/ui/sidebar.tsx',
+    '/app/client/src/components/ui/skeleton.tsx',
+    '/app/client/src/components/ui/slider.tsx',
+    '/app/client/src/components/ui/switch.tsx',
+    '/app/client/src/components/ui/table.tsx',
+    '/app/client/src/components/ui/tabs.tsx',
+    '/app/client/src/components/ui/textarea.tsx',
+    '/app/client/src/components/ui/toast.tsx',
+    '/app/client/src/components/ui/toggle-group.tsx',
+    '/app/client/src/components/ui/toggle.tsx',
+    '/app/client/src/hooks/use-mobile.tsx',
+    '/app/tailwind.config.ts',
+    '/app/node_modules/react/cjs/react.production.min.js',
+    '/app/node_modules/react-dom/cjs/react-dom.production.min.js',
+    '/app/node_modules/wouter/esm/react-deps.js',
+    '/app/node_modules/regexparam/dist/index.mjs',
+    '/app/node_modules/wouter/esm/use-browser-location.js',
+    '/app/node_modules/@radix-ui/react-tooltip/dist/index.mjs',
+    '/app/node_modules/lucide-react/dist/esm/lucide-react.js',
+    '/app/node_modules/framer-motion/dist/es/index.mjs',
+    ... 20 more items
+  ]
+}
+Build Failed: build daemon returned an error < failed to solve: process "npm run build" did not complete successfully: exit code: 1 >
