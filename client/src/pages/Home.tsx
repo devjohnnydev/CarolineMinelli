@@ -23,7 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 // Static image for lawyer branding
-import brandingImg from "/images/branding.jpeg";
+import brandingImg from "/images/branding.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
