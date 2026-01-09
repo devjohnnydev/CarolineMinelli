@@ -22,17 +22,12 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Static image for lawyer branding
-import brandingImg from "/images/branding.png";
+// Assets
+import brandingImg from "@assets/carolineM_1767921270291.png";
+import scalesImg from "@assets/balança_1767921438367.jpg";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
-
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, ease: "easeOut" }
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -45,6 +40,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-secondary/20 via-background to-background z-0" />
         <div className="absolute top-1/4 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[100px]" />
         <div className="absolute bottom-1/4 -left-20 w-72 h-72 bg-purple-500/10 rounded-full blur-[80px]" />
+        
+        {/* Background Scales Image */}
+        <div 
+          className="absolute inset-0 z-0 opacity-10 pointer-events-none flex items-center justify-center"
+          style={{
+            backgroundImage: `url(${scalesImg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            mixBlendMode: 'luminosity'
+          }}
+        />
         
         <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
           <motion.div 
