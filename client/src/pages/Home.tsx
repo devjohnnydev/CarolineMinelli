@@ -139,7 +139,7 @@ export default function Home() {
                 <img 
                   src={brandingImg} 
                   alt="Dra. Caroline Minelli" 
-                  className="w-full h-full object-cover object-top opacity-90 hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-contain object-top opacity-90 hover:scale-105 transition-transform duration-700"
                 />
                 
                 {/* Overlay Badge */}
