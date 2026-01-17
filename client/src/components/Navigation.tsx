@@ -20,7 +20,8 @@ export function Navigation() {
   const navLinks = [
     { name: "Início", href: "#hero" },
     { name: "Sobre", href: "#about" },
-    { name: "Serviços", href: "#services" },
+    { name: "Áreas de Atuação", href: "#services" },
+    { name: "Parcerias", href: "#partners" },
     { name: "Contato", href: "#contact" },
   ];
 

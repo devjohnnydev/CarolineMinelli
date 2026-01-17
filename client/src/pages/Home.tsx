@@ -155,7 +155,7 @@ export default function Home() {
             >
               <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Sobre Mim</h4>
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-foreground">
-                Advocacia com <span className="text-primary italic">Humanidade</span> e Excelência
+                Advocacia com <span className="text-primary italic">Humanidade</span> e Segurança
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
@@ -175,10 +175,10 @@ export default function Home() {
 
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  "Atendimento Personalizado",
-                  "Sigilo Absoluto",
-                  "Estratégias Humanizadas",
-                  "Resolução de Conflitos"
+                  "Foco no Direito de Família",
+                  "Atendimento Humanizado",
+                  "Estratégia em Divórcios",
+                  "Proteção ao Consumidor",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-primary w-5 h-5 flex-shrink-0" />
