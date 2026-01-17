@@ -18,11 +18,7 @@ import {
   Mail, 
   Instagram, 
   ChevronDown,
-  Scale,
-  HeartHandshake,
-  ShoppingBag,
-  Briefcase,
-  FileText
+  Scale
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -139,7 +135,7 @@ export default function Home() {
                 <img 
                   src={brandingImg} 
                   alt="Dra. Caroline Minelli" 
-                  className="w-full h-full object-contain object-top opacity-90 hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
                 />
                 
                 {/* Overlay Badge */}
@@ -172,14 +168,17 @@ export default function Home() {
                 <p>
                   Além do Direito de Família e Sucessões, também atuo na área de Direito do Consumidor, oferecendo orientação clara e objetiva na defesa dos direitos do cliente.
                 </p>
+                <p>
+                  Para garantir um atendimento completo, conto com uma rede de parceiros qualificados, que atuam nas áreas previdenciária e de advocacia extrajudicial, possibilitando soluções integradas, seguras e adequadas às necessidades de cada caso.
+                </p>
               </div>
 
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  "Direito de Família",
-                  "Divórcio e Guarda",
-                  "Direito do Consumidor",
+                  "Atendimento Personalizado",
+                  "Sigilo Absoluto",
                   "Estratégias Humanizadas",
+                  "Resolução de Conflitos"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-primary w-5 h-5 flex-shrink-0" />
@@ -201,76 +200,40 @@ export default function Home() {
               Serviços Jurídicos Especializados
             </h2>
             <p className="text-muted-foreground text-lg">
-              Atuamos com excelência e dedicação, sempre focando na melhor solução para o seu caso.
+              Atuamos com excelência e dedicação em diversas áreas do direito, 
+              sempre focando na melhor solução para o seu caso.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-background p-8 rounded-3xl border border-border shadow-sm hover:shadow-md transition-all"
-            >
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                <HeartHandshake className="text-primary w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">Direito de Família</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Foco especializado em divórcio, guarda de filhos e acordos familiares, com abordagem sensível e estratégica.
-              </p>
-              <ul className="space-y-3">
-                {["Divórcio Judicial e Extrajudicial", "Guarda e Convivência", "Pensão Alimentícia", "Inventários"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-foreground/80">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-background p-8 rounded-3xl border border-border shadow-sm hover:shadow-md transition-all"
-            >
-              <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                <ShoppingBag className="text-primary w-6 h-6" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">Direito do Consumidor</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Defesa ativa dos seus direitos contra práticas abusivas, garantindo reparação e justiça nas relações de consumo.
-              </p>
-              <ul className="space-y-3">
-                {["Práticas Abusivas", "Danos Morais e Materiais", "Cobranças Indevidas", "Ações Contra Seguradoras"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-foreground/80">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-
-          <div className="text-center max-w-3xl mx-auto mt-12 pt-12 border-t border-border/50">
-            <h4 className="text-primary font-medium tracking-widest uppercase mb-6">Parcerias Estratégicas</h4>
-            <p className="text-muted-foreground text-lg mb-10">
-              Para garantir um atendimento completo, conto com uma rede de parceiros qualificados para soluções integradas:
-            </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              {[
-                { title: "Direito Previdenciário", icon: Briefcase },
-                { title: "Advocacia Extrajudicial", icon: FileText }
-              ].map((partner, i) => (
-                <div key={i} className="flex items-center gap-3 bg-background px-6 py-4 rounded-full border border-border shadow-sm">
-                  <partner.icon className="text-primary w-5 h-5" />
-                  <span className="font-medium text-foreground">{partner.title}</span>
-                </div>
-              ))}
+          {isLoading ? (
+            <div className="flex justify-center py-20">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
             </div>
-          </div>
+          ) : services && services.length > 0 ? (
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-4">
+                {services.map((service, index) => (
+                  <CarouselItem key={service.id} className="pl-4 md:basis-1/2 lg:basis-1/3 h-auto">
+                    <ServiceCard service={service} index={index} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex justify-end gap-2 mt-8 mr-4">
+                <CarouselPrevious className="static translate-y-0 bg-transparent border-primary/30 text-primary hover:bg-primary hover:text-background" />
+                <CarouselNext className="static translate-y-0 bg-transparent border-primary/30 text-primary hover:bg-primary hover:text-background" />
+              </div>
+            </Carousel>
+          ) : (
+            <div className="text-center py-10 text-muted-foreground">
+              Nenhum serviço cadastrado no momento.
+            </div>
+          )}
         </div>
       </section>
 
