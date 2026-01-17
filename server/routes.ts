@@ -7,15 +7,11 @@ async function seedDatabase() {
   const existing = await storage.getServices();
   if (existing.length === 0) {
     const seeds = [
-      { title: "Guarda", description: "Proteção e bem-estar dos filhos e menores.", category: "Família", icon: "Shield" },
-      { title: "Investigação de Paternidade", description: "Reconhecimento biológico e garantia de direitos.", category: "Família", icon: "Search" },
-      { title: "Divórcio", description: "Atuação em divórcios judiciais e extrajudiciais.", category: "Família", icon: "HeartCrack" },
-      { title: "Regularização de Imóvel", description: "Regularização documental e usucapião.", category: "Civil", icon: "Home" },
-      { title: "Indenização", description: "Ações de reparação por danos materiais e morais.", category: "Civil", icon: "Gavel" },
-      { title: "Direito do Consumidor", description: "Defesa contra práticas abusivas e defeitos.", category: "Civil", icon: "ShoppingBag" },
-      { title: "Consultoria Cível", description: "Orientação preventiva e análise de riscos.", category: "Civil", icon: "BookOpen" },
-      { title: "Acordos Extrajudiciais", description: "Resolução de conflitos de forma amigável.", category: "Civil", icon: "Handshake" },
-      { title: "Planejamento Patrimonial", description: "Organização e proteção de bens e herança.", category: "Civil", icon: "Briefcase" }
+      { title: "Direito Civil", description: "Atuação em demandas cíveis, contratos, responsabilidade civil e soluções jurídicas personalizadas.", category: "Civil", icon: "Gavel" },
+      { title: "Direito do Consumidor", description: "Defesa dos direitos do consumidor, ações indenizatórias, revisão de contratos e práticas abusivas.", category: "Consumidor", icon: "ShoppingBag" },
+      { title: "Direito Trabalhista", description: "Assessoria e atuação em demandas trabalhistas, tanto para empregados quanto para empregadores, com foco em segurança jurídica e prevenção de conflitos.", category: "Trabalhista", icon: "Briefcase" },
+      { title: "Direito Empresarial", description: "Consultoria jurídica para empresas, contratos empresariais, estruturação de negócios e suporte jurídico estratégico.", category: "Empresarial", icon: "Scale" },
+      { title: "Planejamento Patrimonial e Sucessório", description: "Organização e proteção do patrimônio familiar, planejamento sucessório, inventários e estratégias para segurança jurídica e sucessão tranquila.", category: "Sucessório", icon: "Home" }
     ];
 
     for (const seed of seeds) {

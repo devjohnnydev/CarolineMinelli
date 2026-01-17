@@ -216,7 +216,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Áreas de Atuação</h4>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-              Serviços Jurídicos Especializados
+              Áreas de Atuação
             </h2>
             <p className="text-muted-foreground text-lg">
               Atuamos com excelência e dedicação em diversas áreas do direito, 

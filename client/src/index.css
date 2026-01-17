@@ -9,8 +9,8 @@
   --background: 0 0% 100%;
   --foreground: 266 61% 11%;
 
-  --primary: 46 64% 53%;         /* #d4af37 (Gold) */
-  --primary-foreground: 0 0% 100%;
+  --primary: 34 25% 90%;         /* Bege Claro */
+  --primary-foreground: 266 61% 11%;
 
   --secondary: 266 20% 96%;
   --secondary-foreground: 266 61% 11%;
@@ -18,7 +18,7 @@
   --muted: 266 10% 90%;
   --muted-foreground: 266 10% 40%;
 
-  --accent: 46 64% 53%;
+  --accent: 34 15% 40%;          /* Marrom Sofisticado */
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
@@ -26,7 +26,7 @@
 
   --border: 266 10% 80%;
   --input: 266 10% 80%;
-  --ring: 46 64% 53%;
+  --ring: 34 15% 40%;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
@@ -37,7 +37,7 @@
   --background: 266 61% 11%;     /* #1a0b2e */
   --foreground: 45 20% 96%;      /* Off-white */
 
-  --primary: 46 64% 53%;         /* #d4af37 (Gold) */
+  --primary: 34 25% 90%;         /* Bege Claro */
   --primary-foreground: 266 61% 11%;
 
   --secondary: 261 48% 21%;      /* Lighter purple for cards */
@@ -46,12 +46,12 @@
   --muted: 261 30% 25%;
   --muted-foreground: 260 10% 70%;
 
-  --accent: 46 64% 53%;
-  --accent-foreground: 266 61% 11%;
+  --accent: 34 15% 40%;          /* Marrom Sofisticado */
+  --accent-foreground: 45 20% 96%;
 
   --border: 261 30% 25%;
   --input: 261 30% 25%;
-  --ring: 46 64% 53%;
+  --ring: 34 15% 40%;
 }
 
 @layer base {
