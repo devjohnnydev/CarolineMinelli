@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 
 // Assets
 import brandingImg from "@/assets/branding.png";
-import scalesImg from "@assets/stock_images/antique_law_scales_o_302995eb.jpg";
+import scalesImg from "@assets/stock_images/elegant_judicial_jus_a79c63f4.jpg";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
