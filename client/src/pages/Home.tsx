@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 
 // Assets
 import brandingImg from "@/assets/branding.png";
-import scalesImg from "@/assets/favicon.png";
+import scalesImg from "@assets/stock_images/antique_law_scales_o_302995eb.jpg";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
@@ -43,12 +43,11 @@ export default function Home() {
         
         {/* Background Scales Image */}
         <div 
-          className="absolute inset-0 z-0 opacity-10 pointer-events-none flex items-center justify-center"
+          className="absolute inset-0 z-0 opacity-20 pointer-events-none flex items-center justify-center"
           style={{
             backgroundImage: `url(${scalesImg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            mixBlendMode: 'luminosity'
           }}
         />
         
