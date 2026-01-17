@@ -18,7 +18,8 @@ import {
   Mail, 
   Instagram, 
   ChevronDown,
-  Scale
+  Scale,
+  Handshake
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -134,7 +135,7 @@ export default function Home() {
                 <img 
                   src={brandingImg} 
                   alt="Dra. Caroline Minelli" 
-                  className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top opacity-90 hover:scale-105 transition-transform duration-700"
                 />
                 
                 {/* Overlay Badge */}
@@ -167,8 +168,29 @@ export default function Home() {
                 <p>
                   Além do Direito de Família e Sucessões, também atuo na área de Direito do Consumidor, oferecendo orientação clara e objetiva na defesa dos direitos do cliente.
                 </p>
-                <p>
-                  Para garantir um atendimento completo, conto com uma rede de parceiros qualificados, que atuam nas áreas previdenciária e de advocacia extrajudicial, possibilitando soluções integradas, seguras e adequadas às necessidades de cada caso.
+              </div>
+
+              {/* Partnerships Section */}
+              <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/10">
+                <h4 className="text-primary font-bold mb-4 flex items-center gap-2">
+                  <Handshake className="w-5 h-5" />
+                  Parcerias Estratégicas
+                </h4>
+                <p className="text-muted-foreground mb-4">
+                  Para garantir um atendimento completo e especializado, possuo parcerias estratégicas nas áreas de:
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Direito Previdenciário
+                  </li>
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Advocacia Extrajudicial
+                  </li>
+                </ul>
+                <p className="text-sm text-primary/80 italic font-medium">
+                  Tom profissional, acessível e ético.
                 </p>
               </div>
 
