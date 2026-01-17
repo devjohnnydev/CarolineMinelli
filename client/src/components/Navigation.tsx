@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
+import logoImg from "@/assets/logo.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,9 +42,13 @@ export function Navigation() {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="p-2 rounded bg-primary/10 group-hover:bg-primary transition-colors duration-300">
-            <Scale className="w-6 h-6 text-primary group-hover:text-background transition-colors duration-300" />
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative w-12 h-12 flex items-center justify-center">
+            <img 
+              src={logoImg} 
+              alt="Logo Caroline Minelli" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold leading-none text-foreground">Caroline Minelli</span>

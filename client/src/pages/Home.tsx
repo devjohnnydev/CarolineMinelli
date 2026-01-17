@@ -26,6 +26,7 @@ import { Button } from "@/components/ui/button";
 // Assets
 import brandingImg from "@/assets/branding.png";
 import scalesImg from "@/assets/hero-bg.png";
+import logoImg from "@/assets/logo.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
@@ -400,8 +401,10 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-secondary/10 py-12 border-t border-border">
         <div className="container px-4 text-center">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <Scale className="w-6 h-6 text-primary" />
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="w-10 h-10">
+              <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
+            </div>
             <span className="font-serif text-xl font-bold text-foreground">Caroline Minelli</span>
           </div>
           
