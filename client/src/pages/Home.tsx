@@ -183,11 +183,15 @@ export default function Home() {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   <li className="flex items-center gap-2 text-foreground/90 font-medium">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Direito Previdenciário
+                    Direito Trabalhista
                   </li>
                   <li className="flex items-center gap-2 text-foreground/90 font-medium">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Advocacia Extrajudicial
+                    Direito Empresarial
+                  </li>
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Planejamento Patrimonial
                   </li>
                 </ul>
               </div>
