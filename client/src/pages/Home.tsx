@@ -190,9 +190,6 @@ export default function Home() {
                     Advocacia Extrajudicial
                   </li>
                 </ul>
-                <p className="text-sm text-primary/80 italic font-medium">
-                  Tom profissional, acessível e ético.
-                </p>
               </div>
 
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
