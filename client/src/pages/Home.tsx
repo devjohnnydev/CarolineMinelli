@@ -298,15 +298,19 @@ export default function Home() {
               Para oferecer um suporte jurídico completo e especializado, o escritório mantém parcerias estratégicas com profissionais de excelência em áreas complementares.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {[
                 {
-                  title: "Direito Previdenciário",
-                  description: "Auxílio especializado em aposentadorias, benefícios e revisões junto ao INSS.",
+                  title: "Direito Trabalhista",
+                  description: "Assessoria e atuação em demandas trabalhistas, tanto para empregados quanto para empregadores, com foco em segurança jurídica e prevenção de conflitos.",
                 },
                 {
-                  title: "Advocacia Extrajudicial",
-                  description: "Resolução de questões documentais, inventários e divórcios em cartório com agilidade.",
+                  title: "Direito Empresarial",
+                  description: "Consultoria jurídica para empresas, contratos empresariais, estruturação de negócios e suporte jurídico estratégico.",
+                },
+                {
+                  title: "Planejamento Patrimonial",
+                  description: "Organização e proteção do patrimônio familiar, planejamento sucessório, inventários e estratégias para segurança jurídica e sucessão tranquila.",
                 },
               ].map((partner, i) => (
                 <div key={i} className="bg-background border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
