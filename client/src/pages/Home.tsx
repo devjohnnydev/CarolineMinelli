@@ -413,7 +413,7 @@ export default function Home() {
           </div>
 
           <p className="text-xs text-foreground/30">
-            &copy; {new Date().getFullYear()} Caroline Minelli Advocacia. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Caroline Minelli Advogada. Todos os direitos reservados.
           </p>
         </div>
       </footer>

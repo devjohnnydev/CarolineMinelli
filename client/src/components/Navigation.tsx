@@ -47,7 +47,7 @@ export function Navigation() {
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold leading-none text-foreground">Caroline Minelli</span>
-            <span className="text-[10px] tracking-[0.2em] text-primary uppercase">Advocacia</span>
+            <span className="text-[10px] tracking-[0.2em] text-primary uppercase">Advogada</span>
           </div>
         </Link>
 
