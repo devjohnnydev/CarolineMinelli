@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 // Assets
-import brandingImg from "@assets/branding.png";
-import scalesImg from "@assets/favicon.png";
+import brandingImg from "@/assets/branding.png";
+import scalesImg from "@/assets/favicon.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
@@ -141,7 +141,7 @@ export default function Home() {
                 {/* Overlay Badge */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background via-background/80 to-transparent">
                   <h3 className="text-2xl font-serif text-primary font-bold">Dra. Caroline Minelli</h3>
-                  <p className="text-foreground/80">OAB/SP 123.456</p>
+                  <p className="text-foreground/80">OAB/SP 474.676</p>
                 </div>
               </div>
             </motion.div>
