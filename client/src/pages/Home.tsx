@@ -258,6 +258,48 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
+      <section id="partners" className="py-24 bg-secondary/10 relative">
+        <div className="container px-4 md:px-6 mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Parcerias Estratégicas</h4>
+            <h2 className="text-4xl font-serif font-bold text-foreground mb-8">
+              Soluções Integradas para sua Segurança
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
+              Para oferecer um suporte jurídico completo e especializado, o escritório mantém parcerias estratégicas com profissionais de excelência em áreas complementares.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {[
+                {
+                  title: "Direito Previdenciário",
+                  description: "Auxílio especializado em aposentadorias, benefícios e revisões junto ao INSS.",
+                },
+                {
+                  title: "Advocacia Extrajudicial",
+                  description: "Resolução de questões documentais, inventários e divórcios em cartório com agilidade.",
+                },
+              ].map((partner, i) => (
+                <div key={i} className="bg-background border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                  <h5 className="text-xl font-serif font-bold text-primary mb-4">{partner.title}</h5>
+                  <p className="text-muted-foreground">{partner.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-12 text-foreground/70 italic font-medium">
+              Atuação pautada pela ética, acessibilidade e o mais alto rigor profissional.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
       <section id="contact" className="py-24 relative">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
