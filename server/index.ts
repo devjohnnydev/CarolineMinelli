@@ -64,7 +64,28 @@ app.use((req, res, next) => {
   next();
 });
 
+import { migrate } from "drizzle-orm/node-postgres/migrator";
+import { db } from "./db";
+
 (async () => {
+  try {
+    const isDev = process.env.NODE_ENV === "development";
+    // In dev, usually migration is manual or done via npm run db:push
+    // But in prod it's critical. 
+    // We can run it in both or just prod. 
+    // The previous error was in production.
+    await migrate(db, { migrationsFolder: "migrations" });
+    log("Database migrations completed successfully.");
+  } catch (err) {
+    console.error("Migration failed:", err);
+    // Continue potentially? Or exit?
+    // If migration fails, app usually can't work.
+    // process.exit(1); 
+    // But maybe let it crash naturally later if table missing, 
+    // to keep error visible in http handler? 
+    // No, better to see migration error.
+  }
+
   await registerRoutes(httpServer, app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
