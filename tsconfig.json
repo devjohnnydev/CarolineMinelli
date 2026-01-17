@@ -1,6 +1,4 @@
 {
-  "include": ["shared/**/*", "server/**/*"],
-  "exclude": ["node_modules", "dist", "client", "**/*.test.ts"],
   "compilerOptions": {
     "target": "ES2022",
     "module": "CommonJS",
@@ -14,5 +12,7 @@
     "paths": {
       "@shared/*": ["./shared/*"]
     }
-  }
+  },
+  "include": ["shared/**/*", "server/**/*"],
+  "exclude": ["node_modules", "dist", "client", "**/*.test.ts"]
 }
