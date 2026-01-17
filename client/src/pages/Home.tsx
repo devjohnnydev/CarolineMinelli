@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 // Assets
-import brandingImg from "@assets/carolineM_1767921270291.png";
-import scalesImg from "@assets/balança_1767921438367.jpg";
+import brandingImg from "@assets/branding.png";
+import scalesImg from "@assets/favicon.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
