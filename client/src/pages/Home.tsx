@@ -79,7 +79,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-foreground/80 max-w-3xl mb-10 font-light leading-relaxed"
+            className="text-xl md:text-2xl text-primary max-w-3xl mb-10 font-light leading-relaxed"
           >
             Advogada - OAB/SP 474.676
             <br />
@@ -162,16 +162,39 @@ export default function Home() {
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
+                <p className="text-primary">
                   Atuo com foco em Direito de Família, com ênfase em divórcio e guarda de filhos, oferecendo um atendimento acolhedor, responsável e estratégico como advogada independente. Compreendo que essas demandas envolvem não apenas questões jurídicas, mas também aspectos emocionais profundos, que exigem sensibilidade, escuta ativa e respeito à história de cada família.
                 </p>
-                <p>
+                <p className="text-primary">
                   Minha atuação busca soluções jurídicas eficientes e equilibradas, priorizando sempre que possível a resolução consensual dos conflitos, de forma a reduzir o desgaste emocional das partes envolvidas e promover acordos mais justos e duradouros.
                 </p>
               </div>
 
-              {/* Partnerships Section removed as per user request to have only one areas section */}
-              
+              {/* Parcerias Section */}
+              <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/10">
+                <h4 className="text-primary font-bold mb-4 flex items-center gap-2">
+                  <Handshake className="w-5 h-5" />
+                  Rede de Parceiros
+                </h4>
+                <p className="text-muted-foreground mb-4 text-primary">
+                  Como advogada independente, conto com uma rede de amigos e parceiros advogados para garantir um atendimento completo em áreas complementares:
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Direito Trabalhista
+                  </li>
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Direito Empresarial
+                  </li>
+                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Planejamento Patrimonial
+                  </li>
+                </ul>
+              </div>
+
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   "Divórcio Judicial e Extrajudicial",
@@ -194,7 +217,7 @@ export default function Home() {
       <section id="services" className="py-24 bg-secondary/20 relative">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6">
+            <h2 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 text-primary">
               Áreas de Atuação
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -265,12 +288,12 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Parcerias e Atuação</h4>
-            <h2 className="text-4xl font-serif font-bold text-foreground mb-8">
+            <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Parcerias e Rede de Apoio</h4>
+            <h2 className="text-4xl font-serif font-bold text-foreground mb-8 text-primary">
               Soluções Especializadas
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
-              Atuação dedicada e estratégica em áreas fundamentais do direito para garantir a melhor defesa dos seus interesses.
+              Como advogada independente, conto com uma rede de amigos e parceiros advogados para oferecer um suporte jurídico completo e especializado.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -396,7 +419,7 @@ export default function Home() {
           </div>
 
           <p className="text-xs text-foreground/30">
-            &copy; {new Date().getFullYear()} Caroline Minelli Advogada. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Caroline Minelli. Todos os direitos reservados.
           </p>
         </div>
       </footer>
