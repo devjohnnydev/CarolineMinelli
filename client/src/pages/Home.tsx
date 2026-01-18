@@ -27,6 +27,7 @@ import { Button } from "@/components/ui/button";
 import brandingImg from "@/assets/branding.png";
 import scalesImg from "@/assets/hero-bg.png";
 import logoImg from "@assets/head_1768702302355.png";
+import partnersHeaderImg from "@assets/image_1768702895988.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
@@ -210,11 +211,15 @@ export default function Home() {
 
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-secondary/20 relative">
-        <div className="container px-4 md:px-6 mx-auto">
+        <div className="container px-4 md:px-6 mx-auto text-center">
+          <div className="flex justify-center mb-8">
+            <img 
+              src={partnersHeaderImg} 
+              alt="Principais Atuações" 
+              className="max-w-[400px] h-auto object-contain"
+            />
+          </div>
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 text-primary">
-              Áreas de Atuação
-            </h2>
             <p className="text-muted-foreground text-lg">
               Atuamos com excelência e dedicação em diversas áreas do direito, 
               sempre focando na melhor solução para o seu caso.
@@ -283,10 +288,13 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Parcerias e Rede de Apoio</h4>
-            <h2 className="text-4xl font-serif font-bold text-foreground mb-8 text-primary">
-              Soluções Especializadas
-            </h2>
+            <div className="flex justify-center mb-8">
+              <img 
+                src={partnersHeaderImg} 
+                alt="Parcerias e Rede de Apoio" 
+                className="max-w-[400px] h-auto object-contain"
+              />
+            </div>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
               Como advogada independente, conto com uma rede de amigos e parceiros advogados para oferecer um suporte jurídico completo e especializado.
             </p>
