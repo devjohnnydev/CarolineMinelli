@@ -166,9 +166,6 @@ export default function Home() {
                 <p>
                   Minha atuação busca soluções jurídicas eficientes e equilibradas, priorizando sempre que possível a resolução consensual dos conflitos, de forma a reduzir o desgaste emocional das partes envolvidas e promover acordos mais justos e duradouros.
                 </p>
-                <p>
-                  Além do Direito de Família e Sucessões, também atuo na área de Direito do Consumidor, oferecendo orientação clara e objetiva na defesa dos direitos do cliente.
-                </p>
               </div>
 
               {/* Partnerships Section removed as per user request to have only one areas section */}
