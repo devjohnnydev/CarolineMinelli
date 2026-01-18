@@ -43,11 +43,11 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12 flex items-center justify-center">
+          <div className="relative w-20 h-20 flex items-center justify-center">
             <img 
               src={logoImg} 
               alt="Logo Caroline Minelli" 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain scale-110"
             />
           </div>
           <div className="flex flex-col">
