@@ -7,11 +7,9 @@ async function seedDatabase() {
   const existing = await storage.getServices();
   if (existing.length === 0) {
     const seeds = [
-      { title: "Direito Civil", description: "Atuação em demandas cíveis, contratos, responsabilidade civil e soluções jurídicas personalizadas.", category: "Civil", icon: "Gavel" },
+      { title: "Direito Cível", description: "Atuação em demandas cíveis, contratos, responsabilidade civil e soluções jurídicas personalizadas.", category: "Civil", icon: "Gavel" },
       { title: "Direito do Consumidor", description: "Defesa dos direitos do consumidor, ações indenizatórias, revisão de contratos e práticas abusivas.", category: "Consumidor", icon: "ShoppingBag" },
-      { title: "Direito Trabalhista", description: "Assessoria e atuação em demandas trabalhistas, tanto para empregados quanto para empregadores, com foco em segurança jurídica e prevenção de conflitos.", category: "Trabalhista", icon: "Briefcase" },
-      { title: "Direito Empresarial", description: "Consultoria jurídica para empresas, contratos empresariais, estruturação de negócios e suporte jurídico estratégico.", category: "Empresarial", icon: "Scale" },
-      { title: "Planejamento Patrimonial e Sucessório", description: "Organização e proteção do patrimônio familiar, planejamento sucessório, inventários e estratégias para segurança jurídica e sucessão tranquila.", category: "Sucessório", icon: "Home" }
+      { title: "Direito Extrajudicial", description: "Resolução de questões documentais, inventários e divórcios em cartório com agilidade.", category: "Extrajudicial", icon: "Scale" }
     ];
 
     for (const seed of seeds) {

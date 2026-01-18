@@ -171,31 +171,8 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Partnerships Section */}
-              <div className="mt-12 p-6 rounded-2xl bg-primary/5 border border-primary/10">
-                <h4 className="text-primary font-bold mb-4 flex items-center gap-2">
-                  <Handshake className="w-5 h-5" />
-                  Parcerias Estratégicas
-                </h4>
-                <p className="text-muted-foreground mb-4">
-                  Para garantir um atendimento completo e especializado, possuo parcerias estratégicas nas áreas de:
-                </p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Direito Trabalhista
-                  </li>
-                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Direito Empresarial
-                  </li>
-                  <li className="flex items-center gap-2 text-foreground/90 font-medium">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Planejamento Patrimonial
-                  </li>
-                </ul>
-              </div>
-
+              {/* Partnerships Section removed as per user request to have only one areas section */}
+              
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   "Foco no Direito de Família",
