@@ -212,13 +212,6 @@ export default function Home() {
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-secondary/20 relative">
         <div className="container px-4 md:px-6 mx-auto text-center">
-          <div className="flex justify-center mb-8">
-            <img 
-              src={partnersHeaderImg} 
-              alt="Principais Atuações" 
-              className="max-w-[400px] h-auto object-contain"
-            />
-          </div>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
               Parcerias e Principais Atuações
@@ -291,13 +284,6 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="flex justify-center mb-8">
-              <img 
-                src={partnersHeaderImg} 
-                alt="Parcerias e Rede de Apoio" 
-                className="max-w-[400px] h-auto object-contain"
-              />
-            </div>
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
               Parcerias e Principais Atuações
             </h2>
