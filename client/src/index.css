@@ -9,7 +9,7 @@
   --background: 0 0% 100%;
   --foreground: 266 61% 11%;
 
-  --primary: 43 52% 55%;         /* Ouro Luxo (Muted Gold) */
+  --primary: 43 75% 58%;         /* Ouro Vivo/Brilhante (#d9b33a) */
   --primary-foreground: 0 0% 100%;
 
   --secondary: 266 20% 96%;
@@ -18,7 +18,7 @@
   --muted: 266 10% 90%;
   --muted-foreground: 266 10% 40%;
 
-  --accent: 43 52% 55%;          /* Ouro Luxo */
+  --accent: 43 75% 58%;          /* Ouro Vivo */
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
@@ -26,7 +26,7 @@
 
   --border: 266 10% 80%;
   --input: 266 10% 80%;
-  --ring: 43 52% 55%;
+  --ring: 43 75% 58%;
 
   --font-serif: 'Playfair Display', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
@@ -37,7 +37,7 @@
   --background: 266 61% 11%;     /* #1a0b2e */
   --foreground: 45 20% 96%;      /* Off-white */
 
-  --primary: 43 52% 55%;         /* Ouro Luxo */
+  --primary: 43 75% 58%;         /* Ouro Vivo/Brilhante (#d9b33a) */
   --primary-foreground: 266 61% 11%;
 
   --secondary: 261 48% 21%;      /* Lighter purple for cards */
@@ -46,12 +46,12 @@
   --muted: 261 30% 25%;
   --muted-foreground: 260 10% 70%;
 
-  --accent: 43 52% 55%;          /* Ouro Luxo */
+  --accent: 43 75% 58%;          /* Ouro Vivo */
   --accent-foreground: 45 20% 96%;
 
   --border: 261 30% 25%;
   --input: 261 30% 25%;
-  --ring: 43 52% 55%;
+  --ring: 43 75% 58%;
 }
 
 @layer base {
@@ -66,7 +66,7 @@
   body {
     @apply bg-background text-foreground antialiased font-sans transition-colors duration-300;
     background-image: 
-      radial-gradient(circle at 15% 50%, rgba(193, 154, 82, 0.08), transparent 25%),
+      radial-gradient(circle at 15% 50%, rgba(217, 179, 58, 0.1), transparent 25%),
       radial-gradient(circle at 85% 30%, rgba(138, 79, 255, 0.05), transparent 25%);
     background-attachment: fixed;
   }
@@ -108,5 +108,5 @@
 }
 
 .gold-gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#c19a52] via-[#e2c17d] to-[#c19a52];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#d9b33a] via-[#f7e08b] to-[#d9b33a];
 }
