@@ -19,10 +19,7 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "Início", href: "#hero" },
-    { name: "Sobre", href: "#about" },
-    { name: "Parcerias e Principais Atuações", href: "#services" },
-    { name: "Contato", href: "#contact" },
+    { name: "Parcerias", href: "#services" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -42,13 +39,6 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-20 h-20 flex items-center justify-center">
-            <img 
-              src={logoImg} 
-              alt="Logo Caroline Minelli" 
-              className="w-full h-full object-contain scale-110"
-            />
-          </div>
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold leading-none text-foreground">Caroline Minelli</span>
             <span className="text-[10px] tracking-[0.2em] text-primary uppercase">Advogada</span>
@@ -69,12 +59,6 @@ export function Navigation() {
             </a>
           ))}
           <ThemeToggle />
-          <Button 
-            className="bg-primary hover:bg-white text-primary-foreground hover:text-primary font-semibold transition-all duration-300 rounded-full px-6 border border-primary hover:border-primary"
-            onClick={() => window.open("https://wa.me/5511918231667", "_blank")}
-          >
-            Fale Conosco
-          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -109,12 +93,6 @@ export function Navigation() {
                   {link.name}
                 </a>
               ))}
-              <Button 
-                className="w-full mt-4 bg-primary text-primary-foreground font-bold"
-                onClick={() => window.open("https://wa.me/5511918231667", "_blank")}
-              >
-                Fale Conosco
-              </Button>
             </div>
           </motion.div>
         )}
