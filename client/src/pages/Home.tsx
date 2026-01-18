@@ -172,10 +172,10 @@ export default function Home() {
               
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  "Foco no Direito de Família",
+                  "Divórcio Judicial e Extrajudicial",
+                  "Guarda de Filhos",
+                  "Direito do Consumidor",
                   "Atendimento Humanizado",
-                  "Estratégia em Divórcios",
-                  "Proteção ao Consumidor",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-primary w-5 h-5 flex-shrink-0" />

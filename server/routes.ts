@@ -7,9 +7,9 @@ async function seedDatabase() {
   const existing = await storage.getServices();
   if (existing.length === 0) {
     const seeds = [
-      { title: "Direito Cível", description: "Atuação em demandas cíveis, contratos, responsabilidade civil e soluções jurídicas personalizadas.", category: "Civil", icon: "Gavel" },
-      { title: "Direito do Consumidor", description: "Defesa dos direitos do consumidor, ações indenizatórias, revisão de contratos e práticas abusivas.", category: "Consumidor", icon: "ShoppingBag" },
-      { title: "Direito Extrajudicial", description: "Resolução de questões documentais, inventários e divórcios em cartório com agilidade.", category: "Extrajudicial", icon: "Scale" }
+      { title: "Divórcio Judicial e Extrajudicial", description: "Atuação em divórcios consensuais e litigiosos, com foco na melhor estratégia para o cliente.", category: "Família", icon: "Scale" },
+      { title: "Guarda", description: "Proteção e bem-estar dos filhos, garantindo seus direitos e segurança jurídica.", category: "Família", icon: "Shield" },
+      { title: "Consumidor", description: "Defesa dos direitos do consumidor contra abusos e práticas ilegais.", category: "Consumidor", icon: "ShoppingBag" }
     ];
 
     for (const seed of seeds) {
