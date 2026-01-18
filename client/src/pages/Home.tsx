@@ -62,7 +62,7 @@ export default function Home() {
           >
             <div className="h-1 w-24 bg-primary mx-auto mb-6" />
             <span className="text-primary tracking-[0.3em] uppercase text-sm md:text-base font-medium">
-              Advocacia Especializada
+              Especializada em Direito
             </span>
           </motion.div>
 
@@ -81,6 +81,8 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-foreground/80 max-w-3xl mb-10 font-light leading-relaxed"
           >
+            Advogada - OAB/SP 474.676
+            <br />
             "Construindo relações humanizadas por meios alternativos nas resoluções de conflitos."
           </motion.p>
 
@@ -156,12 +158,12 @@ export default function Home() {
             >
               <h4 className="text-primary font-medium tracking-widest uppercase mb-4">Sobre Mim</h4>
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-foreground">
-                Advocacia com <span className="text-primary italic">Humanidade</span> e Segurança
+                Atuação com <span className="text-primary italic">Humanidade</span> e Segurança
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Atuo com foco em Direito de Família, com ênfase em divórcio e guarda de filhos, oferecendo um atendimento acolhedor, responsável e estratégico. Compreendo que essas demandas envolvem não apenas questões jurídicas, mas também aspectos emocionais profundos, que exigem sensibilidade, escuta ativa e respeito à história de cada família.
+                  Atuo com foco em Direito de Família, com ênfase em divórcio e guarda de filhos, oferecendo um atendimento acolhedor, responsável e estratégico como advogada independente. Compreendo que essas demandas envolvem não apenas questões jurídicas, mas também aspectos emocionais profundos, que exigem sensibilidade, escuta ativa e respeito à história de cada família.
                 </p>
                 <p>
                   Minha atuação busca soluções jurídicas eficientes e equilibradas, priorizando sempre que possível a resolução consensual dos conflitos, de forma a reduzir o desgaste emocional das partes envolvidas e promover acordos mais justos e duradouros.
@@ -383,7 +385,7 @@ export default function Home() {
             <div className="w-10 h-10">
               <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
             </div>
-            <span className="font-serif text-xl font-bold text-foreground">Caroline Minelli</span>
+            <span className="font-serif text-xl font-bold text-foreground">Caroline Minelli | Advogada</span>
           </div>
           
           <div className="flex justify-center gap-8 mb-8 text-sm text-muted-foreground">
