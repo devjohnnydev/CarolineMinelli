@@ -275,51 +275,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PARTNERS SECTION */}
-      <section id="partners" className="py-24 bg-secondary/10 relative">
-        <div className="container px-4 md:px-6 mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
-              Parcerias e Principais Atuações
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
-              Como advogada independente, conto com uma rede de amigos e parceiros advogados para oferecer um suporte jurídico completo e especializado.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  title: "Divórcio Judicial e Extrajudicial",
-                  description: "Resolução de conflitos familiares com foco no equilíbrio emocional e segurança jurídica, seja em via judicial ou em cartório.",
-                },
-                {
-                  title: "Guarda",
-                  description: "Acompanhamento jurídico especializado em processos de guarda, priorizando sempre o melhor interesse dos filhos.",
-                },
-                {
-                  title: "Consumidor",
-                  description: "Defesa técnica e ágil contra práticas abusivas, garantindo o respeito aos direitos e a reparação devida ao consumidor.",
-                },
-              ].map((partner, i) => (
-                <div key={i} className="bg-background border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                  <h5 className="text-xl font-serif font-bold text-primary mb-4">{partner.title}</h5>
-                  <p className="text-muted-foreground">{partner.description}</p>
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-12 text-foreground/70 italic font-medium">
-              Atuação pautada pela ética, acessibilidade e o mais alto rigor profissional.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 relative">
         <div className="container px-4 md:px-6 mx-auto">
