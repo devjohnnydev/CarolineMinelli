@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
-import logoImg from "@/attached_assets/head_1768702302355.png";
+import logoImg from "@assets/head_1768702302355.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
