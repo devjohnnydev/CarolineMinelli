@@ -1,0 +1,183 @@
+ 
+╭─────────────────╮
+│ Railpack 0.16.0 │
+╰─────────────────╯
+ 
+↳ Detected Node
+↳ Using npm package manager
+ 
+Packages
+──────────
+node  │  22.22.0  │  railpack default (22)
+ 
+Steps
+──────────
+▸ install
+$ npm ci
+ 
+▸ build
+$ npm run build
+ 
+Deploy
+──────────
+$ npm run start
+ 
+ 
+Successfully prepared Railpack plan for build
+ 
+ 
+context: 9bf0-kan_
+
+load build definition from railpack-plan.json
+0ms
+
+mkdir -p /app/node_modules/.cache cached
+0ms
+
+copy package-lock.json cached
+0ms
+
+install mise packages: node cached
+0ms
+
+copy package.json cached
+0ms
+
+npm ci cached
+0ms
+
+copy / /app
+44ms
+
+npm run build
+4s
+npm warn config production Use `--omit=dev` instead.
+> rest-express@1.0.0 build
+> tsx script/build.ts
+building client...
+vite v7.3.0 building client environment for production...
+transforming...
+✓ 1063 modules transformed.
+✗ Build failed in 2.82s
+[31m[vite:asset] Could not load /app/client/src/attached_assets/image-removebg-preview_(3)_1768700061708.png (imported by client/src/pages/Home.tsx): ENOENT: no such file or directory, open '/app/client/src/attached_assets/image-removebg-preview_(3)_1768700061708.png'[39m
+
+    at async open (node:internal/fs/promises:636:25)
+    at async Object.readFile (node:internal/fs/promises:1235:14)
+    at async fileToBuiltUrl (/app/node_modules/vite/dist/node/chunks/config.js:8777:18)
+    at async Object.handler (/app/node_modules/vite/dist/node/chunks/config.js:8671:17)
+    at async PluginDriver.hookFirstAndGetPlugin (/app/node_modules/rollup/dist/es/shared/node-entry.js:22376:28)
+    at async <anonymous> (/app/node_modules/rollup/dist/es/shared/node-entry.js:21376:33)
+    at async Queue.work (/app/node_modules/rollup/dist/es/shared/node-entry.js:22604:32) {
+  errno: -2,
+  code: 'PLUGIN_ERROR',
+  syscall: 'open',
+  path: '/app/client/src/attached_assets/image-removebg-preview_(3)_1768700061708.png',
+  pluginCode: 'ENOENT',
+
+  plugin: 'vite:asset',
+  hook: 'load',
+  watchFiles: [
+    '/app/client/index.html',
+    'src/assets/favicon.png',
+    '/app/client/src/main.tsx',
+    '/app/package.json',
+    '/app/node_modules/react-dom/client.js',
+    '/app/node_modules/react/jsx-runtime.js',
+    '/app/client/src/App.tsx',
+    '/app/client/src/index.css',
+    '/app/node_modules/react/cjs/react-jsx-runtime.production.min.js',
+    '/app/node_modules/react-dom/index.js',
+    '/app/node_modules/react/index.js',
+    '/app/client/src/lib/queryClient.ts',
+    '/app/client/src/components/ui/toaster.tsx',
+    '/app/client/src/components/ThemeProvider.tsx',
+    '/app/client/src/components/ui/tooltip.tsx',
+    '/app/client/src/pages/Home.tsx',
+    '/app/client/src/pages/not-found.tsx',
+    '/app/node_modules/@tanstack/react-query/build/modern/index.js',
+    '/app/node_modules/wouter/esm/index.js',
+    '/app/node_modules/react/cjs/react.production.min.js',
+    '/app/node_modules/react-dom/cjs/react-dom.production.min.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/types.js',
+    '/app/node_modules/@tanstack/query-core/build/modern/index.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useQueries.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/queryOptions.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/usePrefetchInfiniteQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/usePrefetchQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/HydrationBoundary.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/QueryErrorResetBoundary.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useIsFetching.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useMutation.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useInfiniteQuery.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/useMutationState.js',
+    '/app/node_modules/@tanstack/react-query/build/modern/isRestoring.js',
+    '/app/node_modules/scheduler/index.js',
+    '/app/node_modules/wouter/esm/react-deps.js',
+    '/app/node_modules/wouter/esm/use-browser-location.js',
+    '/app/node_modules/regexparam/dist/index.mjs',
+    '/app/client/src/components/ui/card.tsx',
+    '/app/client/src/lib/utils.ts',
+    '/app/client/src/components/ui/toast.tsx',
+    '/app/client/src/hooks/use-toast.ts',
+    '/app/node_modules/@radix-ui/react-tooltip/dist/index.mjs',
+    '/app/node_modules/lucide-react/dist/esm/lucide-react.js',
+    '/app/client/src/hooks/use-services.ts',
+    '/app/client/src/lib/logo.ts',
+    '/app/client/src/components/ContactForm.tsx',
+    '/app/client/src/components/FloatingWhatsApp.tsx',
+    '/app/client/src/components/Navigation.tsx',
+    '/app/client/src/components/ServiceCard.tsx',
+    '/app/client/src/components/ThemeToggle.tsx',
+    '/app/client/src/components/ui/accordion.tsx',
+    '/app/client/src/components/ui/alert-dialog.tsx',
+    '/app/client/src/components/ui/alert.tsx',
+    '/app/client/src/components/ui/aspect-ratio.tsx',
+    '/app/client/src/components/ui/avatar.tsx',
+    '/app/client/src/components/ui/badge.tsx',
+    '/app/client/src/components/ui/breadcrumb.tsx',
+    '/app/client/src/components/ui/button.tsx',
+    '/app/client/src/components/ui/calendar.tsx',
+    '/app/client/src/components/ui/carousel.tsx',
+    '/app/client/src/components/ui/chart.tsx',
+    '/app/client/src/components/ui/checkbox.tsx',
+    '/app/client/src/components/ui/collapsible.tsx',
+    '/app/client/src/components/ui/command.tsx',
+    '/app/client/src/components/ui/context-menu.tsx',
+    '/app/client/src/components/ui/dialog.tsx',
+    '/app/client/src/components/ui/drawer.tsx',
+    '/app/client/src/components/ui/dropdown-menu.tsx',
+    '/app/client/src/components/ui/form.tsx',
+    '/app/client/src/components/ui/hover-card.tsx',
+    '/app/client/src/components/ui/input-otp.tsx',
+    '/app/client/src/components/ui/input.tsx',
+    '/app/client/src/components/ui/label.tsx',
+    '/app/client/src/components/ui/menubar.tsx',
+    '/app/client/src/components/ui/navigation-menu.tsx',
+    '/app/client/src/components/ui/pagination.tsx',
+    '/app/client/src/components/ui/popover.tsx',
+    '/app/client/src/components/ui/progress.tsx',
+    '/app/client/src/components/ui/radio-group.tsx',
+    '/app/client/src/components/ui/resizable.tsx',
+    '/app/client/src/components/ui/scroll-area.tsx',
+    '/app/client/src/components/ui/select.tsx',
+    '/app/client/src/components/ui/separator.tsx',
+    '/app/client/src/components/ui/sheet.tsx',
+    '/app/client/src/components/ui/sidebar.tsx',
+    '/app/client/src/components/ui/skeleton.tsx',
+    '/app/client/src/components/ui/slider.tsx',
+    '/app/client/src/components/ui/switch.tsx',
+    '/app/client/src/components/ui/table.tsx',
+    '/app/client/src/components/ui/tabs.tsx',
+    '/app/client/src/components/ui/textarea.tsx',
+    '/app/client/src/components/ui/toggle-group.tsx',
+    '/app/client/src/components/ui/toggle.tsx',
+    ... 1005 more items
+  ]
+}
+ERROR: failed to build: failed to solve: process "npm run build" did not complete successfully: exit code: 1
