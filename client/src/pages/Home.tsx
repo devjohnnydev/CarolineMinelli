@@ -157,10 +157,10 @@ export default function Home() {
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p className="text-primary">
+                <p className="text-white">
                   Atuo com foco em Direito de Família, com ênfase em divórcio e guarda de filhos, oferecendo um atendimento acolhedor, responsável e estratégico como advogada independente. Compreendo que essas demandas envolvem não apenas questões jurídicas, mas também aspectos emocionais profundos, que exigem sensibilidade, escuta ativa e respeito à história de cada família.
                 </p>
-                <p className="text-primary">
+                <p className="text-white">
                   Minha atuação busca soluções jurídicas eficientes e equilibradas, priorizando sempre que possível a resolução consensual dos conflitos, de forma a reduzir o desgaste emocional das partes envolvidas e promover acordos mais justos e duradouros.
                 </p>
               </div>
