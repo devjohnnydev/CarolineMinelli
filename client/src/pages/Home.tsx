@@ -27,7 +27,7 @@ import { Button } from "@/components/ui/button";
 import brandingImg from "@/assets/branding.png";
 import scalesImg from "@/assets/hero-bg.png";
 import logoImg from "@assets/head_1768702302355.png";
-import partnersHeaderImg from "@assets/image_1768702895988.png";
+import partnersHeaderImg from "@assets/image_1768703084488.png";
 
 export default function Home() {
   const { data: services, isLoading } = useServices();
