@@ -171,8 +171,8 @@ export default function Home() {
                   <Handshake className="w-5 h-5" />
                   Rede de Parceiros
                 </h4>
-                <p className="text-muted-foreground mb-4 text-primary">
-                  Como advogada independente, conto com uma rede de amigos e parceiros advogados para garantir um atendimento completo em áreas complementares:
+                <p className="text-white mb-4">
+                  Trabalho com uma rede de parceiros advogados para garantir atendimento completo em áreas complementares:
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                   <li className="flex items-center gap-2 text-foreground/90 font-medium">
