@@ -220,6 +220,9 @@ export default function Home() {
             />
           </div>
           <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Parcerias e Principais Atuações
+            </h2>
             <p className="text-muted-foreground text-lg">
               Atuamos com excelência e dedicação em diversas áreas do direito, 
               sempre focando na melhor solução para o seu caso.
@@ -295,6 +298,9 @@ export default function Home() {
                 className="max-w-[400px] h-auto object-contain"
               />
             </div>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Parcerias e Principais Atuações
+            </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
               Como advogada independente, conto com uma rede de amigos e parceiros advogados para oferecer um suporte jurídico completo e especializado.
             </p>
@@ -416,7 +422,7 @@ export default function Home() {
           <div className="flex justify-center flex-wrap gap-8 mb-8 text-sm text-muted-foreground">
             <a href="#hero" className="hover:text-primary transition-colors">Início</a>
             <a href="#about" className="hover:text-primary transition-colors">Sobre</a>
-            <a href="#services" className="hover:text-primary transition-colors">Parcerias</a>
+            <a href="#services" className="hover:text-primary transition-colors">Parcerias e Principais Atuações</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </div>
 
