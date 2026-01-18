@@ -157,10 +157,10 @@ export default function Home() {
               </h2>
               
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p className="text-white">
+                <p>
                   Atuo com foco em Direito de Família, com ênfase em divórcio e guarda de filhos, oferecendo um atendimento acolhedor, responsável e estratégico como advogada independente. Compreendo que essas demandas envolvem não apenas questões jurídicas, mas também aspectos emocionais profundos, que exigem sensibilidade, escuta ativa e respeito à história de cada família.
                 </p>
-                <p className="text-white">
+                <p>
                   Minha atuação busca soluções jurídicas eficientes e equilibradas, priorizando sempre que possível a resolução consensual dos conflitos, de forma a reduzir o desgaste emocional das partes envolvidas e promover acordos mais justos e duradouros.
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function Home() {
                   <Handshake className="w-5 h-5" />
                   Rede de Parceiros
                 </h4>
-                <p className="text-white mb-4">
+                <p className="text-muted-foreground mb-4">
                   Trabalho com uma rede de parceiros advogados para garantir atendimento completo em áreas complementares:
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">

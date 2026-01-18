@@ -108,5 +108,5 @@
 }
 
 .gold-gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#dcb33e] via-[#f9e58e] to-[#dcb33e];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#b38a1d] via-[#dcb33e] to-[#b38a1d] dark:from-[#dcb33e] dark:via-[#f9e58e] dark:to-[#dcb33e];
 }
