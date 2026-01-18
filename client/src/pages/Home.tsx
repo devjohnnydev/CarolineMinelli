@@ -61,9 +61,6 @@ export default function Home() {
             className="mb-6 inline-block"
           >
             <div className="h-1 w-24 bg-primary mx-auto mb-6" />
-            <span className="text-primary tracking-[0.3em] uppercase text-sm md:text-base font-medium">
-              Especializada em Direito
-            </span>
           </motion.div>
 
           <motion.h1 
@@ -81,8 +78,6 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-primary max-w-3xl mb-10 font-light leading-relaxed"
           >
-            Advogada - OAB/SP 474.676
-            <br />
             "Construindo relações humanizadas por meios alternativos nas resoluções de conflitos."
           </motion.p>
 
