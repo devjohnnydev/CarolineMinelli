@@ -19,7 +19,10 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
+    { name: "Início", href: "#hero" },
+    { name: "Sobre", href: "#about" },
     { name: "Parcerias", href: "#services" },
+    { name: "Contato", href: "#contact" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
