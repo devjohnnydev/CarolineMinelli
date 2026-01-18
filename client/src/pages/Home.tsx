@@ -399,17 +399,17 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-secondary/10 py-12 border-t border-border">
         <div className="container px-4 text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-10 h-10">
-              <img src={logoImg} alt="Logo" className="w-full h-full object-contain" />
+          <div className="flex items-center justify-center mb-6">
+            <div className="max-w-[200px] h-auto">
+              <img src={logoImg} alt="Caroline Minelli Advogada" className="w-full h-full object-contain" />
             </div>
-            <span className="font-serif text-xl font-bold text-foreground">Caroline Minelli | Advogada</span>
           </div>
           
-          <div className="flex justify-center gap-8 mb-8 text-sm text-muted-foreground">
+          <div className="flex justify-center flex-wrap gap-8 mb-8 text-sm text-muted-foreground">
             <a href="#hero" className="hover:text-primary transition-colors">Início</a>
             <a href="#about" className="hover:text-primary transition-colors">Sobre</a>
             <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
+            <a href="#partners" className="hover:text-primary transition-colors">Parcerias</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </div>
 
