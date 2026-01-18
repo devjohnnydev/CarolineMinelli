@@ -416,7 +416,7 @@ export default function Home() {
           <div className="flex justify-center flex-wrap gap-8 mb-8 text-sm text-muted-foreground">
             <a href="#hero" className="hover:text-primary transition-colors">Início</a>
             <a href="#about" className="hover:text-primary transition-colors">Sobre</a>
-            <a href="#services" className="hover:text-primary transition-colors">Parceria e Principais Atuações</a>
+            <a href="#services" className="hover:text-primary transition-colors">Parcerias</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </div>
 
